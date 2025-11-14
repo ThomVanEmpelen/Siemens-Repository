@@ -6,6 +6,9 @@
   "root": {
     "name": "myquickstart",
     "version": "0.0.1",
+    "dependencies": {
+      "@ax/system-timer": "^10.2.7"
+    },
     "devDependencies": {
       "@ax/sdk": "^2510.0.0"
     },
@@ -550,6 +553,13 @@
         "@ax/system-datetime": "^10.2.7",
         "@ax/system-conversion": "^10.2.7"
       }
+    },
+    "@ax/system-timer": {
+      "name": "@ax/system-timer",
+      "version": "10.2.7",
+      "integrity": "sha512-wTOcskC9SOaDz29fBngIIKyJWm7bFpVNYqWrLNqL8FqFwQ6Lv24nv4e0d6buoZ7WdB37qbfe/ZS360P/t4SyHQ==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-timer/-/system-timer-10.2.7.tgz",
+      "dependencies": {}
     },
     "@ax/target-llvm": {
       "name": "@ax/target-llvm",

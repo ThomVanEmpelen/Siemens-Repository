@@ -4,6 +4,7 @@ CLASS DevBase
 
         Name        : string;
         Description : string;
+        ControlMode : eDevControlMode := eDevControlMode#rOff;
     END_VAR
 
     METHOD public GetName : string
@@ -13,7 +14,7 @@ CLASS DevBase
         GetDescription := Name;
     END_METHOD
 
-   METHOD PUBLIC Init : INT
+   METHOD PROTECTED Init : INT
     VAR_INPUT
         SetName : string;
         SetDescription : String;
@@ -33,9 +34,8 @@ CLASS DevBase
     Description := SetDescription;
     END_METHOD
 
-    METHOD PUBLIC Exec : INT
-
-
+    METHOD PROTECTED Exec : INT
+  
         Exec := 0;
         return;
     END_Method

@@ -5,7 +5,7 @@ CLASS DevDigitalOutput EXTENDS DevBase
     END_VAR
     
     
-    METHOD PUBLIC OVERRIDE Init : INT
+    METHOD PROTECTED OVERRIDE Init : INT
         VAR_INPUT
             SetName : STRING;
             SetDescription : STRING;

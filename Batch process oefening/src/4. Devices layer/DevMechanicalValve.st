@@ -1,8 +1,10 @@
 {namespace Dev}
-CLASS DevMechanicalValve 
+CLASS DevMechanicalValve EXTENDS DevBase
     VAR
         FbkOpen     : DevDigitalInput;
         FbkClosed   : DevDigitalInput;
+
+        CmdOpen     : DevDigitalOutput;
     END_VAR
     
     
